@@ -7,27 +7,26 @@ package import DAG.
 [![Go Report Card](https://goreportcard.com/badge/gojp/goreportcard)](https://goreportcard.com/report/gojp/goreportcard)
 
 Example usage:
-```
-$ go get github.com/henrywallace/pkgrank
-$ go get github.com/gohugoio/hugo
-$ pkgrank github.com/gohugoio/hugo/...
-0.024520 fmt
-0.023570 strings
-0.019538 github.com/gohugoio/hugo/deps
-0.018792 sync
-0.015960 github.com/gohugoio/hugo/tpl/internal
-0.015799 github.com/spf13/cast
-0.014199 bytes
-0.014145 io
-0.013702 path/filepath
-0.012003 os
-0.011667 github.com/gohugoio/hugo/helpers
-0.011643 encoding/json
-0.011520 errors
-0.011435 reflect
-0.010874 github.com/spf13/afero
-0.010730 github.com/gohugoio/hugo/config
-0.010219 time
+```sh
+$ go get -u github.com/henrywallace/pkgrank
+$ pkgrank crypto/...
+0.046325 unsafe
+0.042954 io
+0.040090 hash
+0.037120 errors
+0.033212 crypto/internal/subtle
+0.030669 strconv
+0.028647 math/big
+0.028464 crypto
+0.026904 sync
+0.024728 crypto/subtle
+0.024202 internal/cpu
+0.022593 crypto/cipher
+0.019348 runtime
+0.018613 crypto/internal/randutil
+0.017637 encoding/asn1
+0.017253 time
+0.017235 encoding/binary
 ```
 
 Use `--prefix` to filter package imports with the given prefix, or `--pkg` to
